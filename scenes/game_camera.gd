@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 #Camera Follows Player with following code
 #global_position = target_position This is used to keep player at center always
 	
-	global_position = global_position.lerp(target_position, 1.0 - exp(-delta * 10)) #lerp is used for smoothing camera and delaying the camera slightly behind player
+	global_position = global_position.lerp(target_position, 1.0 - exp(-delta * 20)) #lerp is used for smoothing camera and delaying the camera slightly behind player
 	
 	
 func acquire_target():
