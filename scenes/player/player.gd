@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 const MAX_SPEED = 125
 const ACCELERATION_SMOOTHING = 30
 
@@ -24,3 +23,4 @@ func get_movement_vector():
 	var x_movement = Input.get_action_strength("move_right") - Input.get_action_strength("move_left") #if right is pressed x = 1 and if both are pressed we get 0.
 	var y_movement = Input.get_action_strength("move_down") - Input.get_action_strength("move_up") #since down is positive and up is negative down comes first
 	return Vector2(x_movement, y_movement)
+
